@@ -125,18 +125,22 @@
     margin-block: 20px;
   }
   .flowers__wrapper {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
-    margin-block-end: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   .flower__list {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
     padding: 0px;
     background-color: var(--accent-light-blue-iii);
     border-radius: 5px;
     margin-block: 0px;
   }
   .controls__units {
+    flex-basis: 12rem;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;

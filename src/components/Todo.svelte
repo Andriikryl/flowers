@@ -133,6 +133,7 @@
     padding: 10px;
   }
   .flower__item {
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
